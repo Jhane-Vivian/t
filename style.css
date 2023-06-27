@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+}
+#logo{
+    width: 50px;
+    height: 30px;
+    margin-top: 25px;
+}
+#caixa{
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+#caixa, input{
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+input{
+    font-size: 10px !important;
+}
+select{
+    font-size: 10px !important;
+}
+#data{
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Check List PF</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h4 class="titulo">CHECK LIST PESSOA FÍSICA</h4>
+    </header>
+     
+        <div id="caixa" class="container">
+          <form action="">
+            <br>
+            <label for="dadosPessoais">DADOS PESSOAIS</label>
+            <br><br>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" class="form-control">
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" class="form-control">
+            <br>
+            <label for="tel">N° para Contato:</label>
+            <input type="number" id="tel" class="form-control">
+            <br>
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimeto"class="form-control">
+            <br>
+            <label for="uf">Naturalidade:</label>
+            <select name="uf" id="uf"class="form-control">
+                <option value="uf00">- Selecionar -</option>
+                <option value="uf01">AC</option>
+                <option value="uf02">AL</option>
+                <option value="uf03">AM</option>
+                <option value="uf04">AP</option>
+                <option value="uf05">BA</option>
+                <option value="uf06">CE</option>
+                <option value="uf07">DF</option>
+                <option value="uf08">ES</option>
+                <option value="uf09">GO</option>
+                <option value="uf010">MA</option>
+                <option value="uf011">MT</option>
+                <option value="uf012">MS</option>
+                <option value="uf013">MG</option>
+                <option value="uf014">PA</option>
+                <option value="uf015">PB</option>
+                <option value="uf016">PR</option>
+                <option value="uf017">PE</option>
+                <option value="uf018">PI</option>
+                <option value="uf019">RJ</option>
+                <option value="uf020">RN</option>
+                <option value="uf021">RS</option>
+                <option value="uf022">RO</option>
+                <option value="uf023">RR</option>
+                <option value="uf024">SC</option>
+                <option value="uf025">SP</option>
+                <option value="uf026">SE</option>
+                <option value="uf027">TO</option>
+            </select>
+
+            <br>
+            <label for="rg">RG:</label>
+            <input type="number" id="rg"class="form-control">
+
+            <br>
+            <label for="EmissorUF" >Estado Emissor:</label>
+            <select name="EmissorUF" id="EmissorUF"class="form-control">
+                <option value="EmissorUF00">- Selecionar -</option>
+                <option value="EmissorUF01">AC</option>
+                <option value="EmissorUF02">AL</option>
+                <option value="EmissorUF03">AM</option>
+                <option value="EmissorUF04">AP</option>
+                <option value="EmissorUF05">BA</option>
+                <option value="EmissorUF06">CE</option>
+                <option value="EmissorUF07">DF</option>
+                <option value="EmissorUF08">ES</option>
+                <option value="EmissorUF09">GO</option>
+                <option value="EmissorUF010">MA</option>
+                <option value="EmissorUF011">MT</option>
+                <option value="EmissorUF012">MS</option>
+                <option value="EmissorUF013">MG</option>
+                <option value="EmissorUF014">PA</option>
+                <option value="EmissorUF015">PB</option>
+                <option value="EmissorUF016">PR</option>
+                <option value="EmissorUF017">PE</option>
+                <option value="EmissorUF018">PI</option>
+                <option value="EmissorUF019">RJ</option>
+                <option value="EmissorUF020">RN</option>
+                <option value="EmissorUF021">RS</option>
+                <option value="EmissorUF022">RO</option>
+                <option value="EmissorUF023">RR</option>
+                <option value="EmissorUF024">SC</option>
+                <option value="EmissorUF025">SP</option>
+                <option value="EmissorUF026">SE</option>
+                <option value="EmissorUF027">TO</option>
+            </select>
+            <br>
+            <label for="dataExpedicao" >Data de Expedição:</label>
+            <input type="date" id="dataExpedicao"class="form-control">
+            <br>
+            <label for="nomeMae" >Nome Completo da Mãe:</label>
+            <input type="text" id="nomeMae" class="form-control">
+            <br>
+            <label for="patrimonio">Patrimônio:</label>
+            <input type="number" id="patrimonio" class="form-control">
+            <br>
+            <label for="rendaM" >Renda Mensal:</label>
+            <input type="number" id="rendaM"class="form-control">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email"class="form-control">
+            <br>
+            <label for="ocupacao">Natureza da Ocupação:</label>
+            <select name="ocupacao" id="ocupacao"class="form-control">
+                <option value="ocupacao00">- Selecionar -</option>
+                <option value="ocupacao01">Aposentado ou Pensionista</option>
+                <option value="ocupacao02">Assalariado(a)</option>
+                <option value="ocupacao03">Autonomo(a)</option>
+                <option value="ocupacao04">Empresário(a)</option>
+                <option value="ocupacao05">Funcionário(a) Público(a)</option>
+                <option value="ocupacao06">Liberal</option>
+            </select>
+            <br>
+            <label for="profissao">Profissão:</label>
+            <input type="text" id="profissao"class="form-control">
+            <br>
+            <label for="tempoEmpresa" >Tempo de Empresa:</label>
+            <input type="text" id="tempoEmpresa"class="form-control">
+            <br>
+            <label for="Banco" >Banco:</label>
+            <input type="text" id="Banco"class="form-control">
+            <br>
+            <label for="Agencia">Agência:</label>
+            <input type="text" id="Agencia"class="form-control">
+            <br>
+            <label for="Conta">Conta:</label>
+            <input type="text" id="Conta"class="form-control">
+            <br>
+            <label for="dadosResidenciais">INFORMÇÕES RESIDENCIAIS</label>
+            <br><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade"class="form-control">
+            <br>
+            <label for="ufR">Naturalidade:</label>
+            <select name="ufR" id="ufR"class="form-control">
+                <option value="ufR00">- Selecionar -</option>
+                <option value="ufR01">AC</option>
+                <option value="ufR02">AL</option>
+                <option value="ufR03">AM</option>
+                <option value="ufR04">AP</option>
+                <option value="ufR05">BA</option>
+                <option value="ufR06">CE</option>
+                <option value="ufR07">DF</option>
+                <option value="ufR08">ES</option>
+                <option value="ufR09">GO</option>
+                <option value="ufR010">MA</option>
+                <option value="ufR011">MT</option>
+                <option value="ufR012">MS</option>
+                <option value="ufR013">MG</option>
+                <option value="ufR014">PA</option>
+                <option value="ufR015">PB</option>
+                <option value="ufR016">PR</option>
+                <option value="ufR017">PE</option>
+                <option value="ufR018">PI</option>
+                <option value="ufR019">RJ</option>
+                <option value="ufR020">RN</option>
+                <option value="ufR021">RS</option>
+                <option value="ufR022">RO</option>
+                <option value="ufR023">RR</option>
+                <option value="ufR024">SC</option>
+                <option value="ufR025">SP</option>
+                <option value="ufR026">SE</option>
+                <option value="ufR027">TO</option>
+            </select>
+            <br>
+            <label for="cep">Cep:</label>
+            <input type="number" id="cep"class="form-control">
+            <br>
+            <label for="end">Endereço:</label>
+            <input type="text" id="end"class="form-control">
+            <br>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro"class="form-control">
+            <br>
+            <label for="situacaoImovel">Situação do Imóvel:</label>
+            <select name="situacaoImovel" id="situacaoImovel"class="form-control">
+                <option value="situacaoImovel00">- Selecionar -</option>
+                <option value="situacaoImovel01">Alugado</option>
+                <option value="situacaoImovel02">Cedido</option>
+                <option value="situacaoImovel03">Familiar</option>
+                <option value="situacaoImovel04">Próprio</option>
+                <option value="situacaoImovel05">Próprio Financiado</option>
+            </select>
+            <br>
+
+            <br>
+            <label for="dadosDetalhessistema">DETALHES DO SISTEMA</label>
+            <br><br>
+            <label for="nProposta">N° Proposta CRM:</label>
+            <input type="text" id="nProposta"class="form-control">
+            <br>
+            <label for="distribuidoraEnergia">Distribuidora de Energia:</label>
+            <input type="text" id="distribuidoraEnergia"class="form-control">
+            <br>
+            <label for="QuantiModulos">Quantidade de Módulos:</label>
+            <input type="number" id="QuantiModulos"class="form-control">
+            <br>
+            <label for="nUC">N° da UC:</label>
+            <input type="number" id="nUC"class="form-control">
+            <br>
+            <label for="modeloInversor">Modelo do Inversor:</label>
+            <select name="modeloInversor" id="modeloInversor"class="form-control">
+                <option value="modeloInversor00">- Selecionar -</option>
+                <option value="modeloInversor01">FRONIUS</option>
+                <option value="modeloInversorl02">SOFAR</option>
+            </select>
+            <br>
+            <label for="modeloPlaca">Modelo do Módulo:</label>
+            <select name="modeloPlaca" id="modeloPlaca"class="form-control">
+                <option value="modeloPlaca00">- Selecionar -</option>
+                <option value="modeloPlaca01">CANADIAN</option>
+                <option value="modeloPlacal02">RISEN</option>
+            </select>
+            <br>
+            <label for="dadosTipoParcelamento">TIPO DE PARCELAMENTO</label>
+            <br><br>
+            <label for="valorTotalSistema">Valor Total do Sistema:</label>
+            <input type="text" id="valorTotalSistema"class="form-control">
+            <br>
+            <label for="valorEntrada">Valor da Entrada:</label>
+            <input type="number" id="valorEntrada"class="form-control">
+            <br>
+            <label for="valorParcela">Valor da Parcela:</label>
+            <input type="number" id="valorParcela"class="form-control">
+            <br>
+            <label for="quantidadeParcelas">Quantidade de Parcelas:</label>
+            <input type="number" id="quantidadeParcelas"class="form-control">
+            <br>
+            <label for="obs">Observações:</label>
+            <input type="text" id="obs"class="form-control">
+            <br>
+
+            <button class="btn btn-warning" style="float: right; margin-top: 10px;" onclick="prox()"> Próximo</button>
+
+              
+          </form>
+        </div>
+   
+</body>
+</html>
